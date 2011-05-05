@@ -6,7 +6,7 @@ jquery.flickr.js is a jquery-plugin to show flickr latest photos.
 # License
 
 Copyright (c) 2011 ryo katsuma
-Licensed under the MIT:
+Licensed under the MIT:  
 http://www.opensource.org/licenses/mit-license.php
 
 
@@ -29,4 +29,4 @@ set photo size(square, thumbnail, small, medium, medium640 or original)
 
 # Demo
 
-https://github.com/katsuma/jquery-flickr-plugin/
+http://katsuma.github.com/jquery-flickr-plugin/
