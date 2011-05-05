@@ -18,13 +18,13 @@ jQuery 1.5 and above
 # Usage
 
 load photos (user_name is always required.)  
-    $('#foo').flickr({ user_name: 'katsuma'});
+    `$('#foo').flickr({ user_name: 'katsuma'});`
 
 set view number  
-    $('#foo').flickr({ user_name: 'katsuma', view_num: 3 });  
+    `$('#foo').flickr({ user_name: 'katsuma', view_num: 3 });`
 
 set photo size(square, thumbnail, small, medium, medium640 or original)  
-    $('#foo').flickr({ user_name: 'katsuma', view_num: 3, size: 'small'});
+    `$('#foo').flickr({ user_name: 'katsuma', view_num: 3, size: 'small'});`
 
 
 # Demo
