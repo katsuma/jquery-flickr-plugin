@@ -106,18 +106,14 @@
 	  },
 	};
 
-	var loaders = function(){
-	  var photos = setting.photos;
-	  var functions = [];
-	  for(var i = 0, len = setting.view_num; i < len; i++) {
-		functions.push(methods.loadPhoto(photos[i]));
-	  }
-	  return functions;
-	};
-
-	return $.when(methods.findByUsername(setting.user_name)).then(function(){
+	$.when(methods.findByUsername(setting.user_name)).then(function(){
 	  $.when(methods.getPublicPhotos()).then(function(){
-		$.when.apply($, loaders()).then(function(){
+		$.when.apply($, (function(){
+		  var photos = setting.photos;
+		  var functions = [];
+		  for(var i=0, len=setting.view_num; i<len; i++) { functions.push(methods.loadPhoto(photos[i])); }
+		  return functions;
+		})()).then(function(){
 		  return self;
 		});
 	  });
