@@ -1,6 +1,6 @@
 ## About
 
-jquery.flickr_widget.js is a jquery-plugin to show flickr latest photos.
+jquery.flickr.js is a jquery-plugin to show flickr latest photos.
 
 
 ## License
